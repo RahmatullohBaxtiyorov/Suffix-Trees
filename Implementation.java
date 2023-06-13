@@ -89,6 +89,10 @@ public class Implementation {
     }
 
     public static void main(String[] args) {
-        new SuffixTree("banana$").visualize();
+        long startTime = System.nanoTime();
+        new SuffixTree("racecar$").visualize();
+        long endTime = System.nanoTime() - startTime;
+        System.out.println(endTime + " nanoseconds");
+
     }
 }
